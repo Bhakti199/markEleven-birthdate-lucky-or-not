@@ -8,7 +8,7 @@ checkButton.addEventListener("click", checkBirthdateLuckyOrNot );
 function checkBirthdateLuckyOrNot(){
     const dob =dateOfBirth.value;
     const sum = calculateSum(dob);
-    if(sum  &&  dob){
+    if(sum  &&  dob && luckyNumber.value){
             compareValues(sum,luckyNumber.value);
     }else{
         displayMessage.innerText="Please enter both the fields 😡";
