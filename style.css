@@ -3,44 +3,53 @@
 :root {
   --primary-color: #78350F;
   --yellow-color:  #FDE68A;
-  --footer-color:
-  #D97706;
+  --footer-color: #D97706;
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body{
   background-color: var(--primary-color);
   font-family: 'Montserrat', sans-serif;
+
 }
 h1{
   text-align: center;
   color:var(--yellow-color);
 }
-.container{
-  width: 60%;
-  margin: auto;
+main {
+    text-align: center;
+    margin: auto;
+    max-width : 80%;
+    margin-top: 1rem;
 }
-
-input, label {
-  display:block;
-  padding: 0.3rem;
-  background: transparent;
-  border-color: var(--yellow-color);
-  color: var(--yellow-color);
-}
-p , #display-message{
+.label-input {
   color:var(--yellow-color);
-}
+    display: block;
+    margin-right: o.8rem;
+    margin-top : 0.5rem;
+   
+}  
 input{
-  margin-bottom: 0.5rem;
-  width: 100%;
+    margin-bottom: 1rem;
+    border-color: var(--yellow-color);
+    background-color: var(--yellow-color);
+    border-width: 0.2rem;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    color: var(--secondary-color);
 }
-#check-number{
- padding: 0.5rem;
-  display: block;
-  margin-top: 1rem;
-  margin: auto;
-  background-color:var(--primary-color);
+button {
+    background-color: var(--yellow-color);
+    padding:0.5rem;
+    padding-left:1rem;
+    padding-right: 1rem;
+    border-radius: 0.3rem;    
+}
+.privacy-notice , #display-message{
   color:var(--yellow-color);
-  border-color: var(--yellow-color);
 }
 
 .list-non-bullet {
@@ -54,12 +63,11 @@ input{
       padding: 0rem 0.5rem;
 }
 .footer {
-  margin-top: 19rem;
+  margin-top: 21rem;
   background-color: var(--footer-color);
   padding: 2rem 0rem;
   text-align: center;
   color: var(--primary-color)
-  /* border-top-right-radius: 1rem;  */
 }
 
 .footer .link {
